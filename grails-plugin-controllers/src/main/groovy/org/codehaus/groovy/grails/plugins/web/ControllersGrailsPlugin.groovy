@@ -205,13 +205,7 @@ class ControllersGrailsPlugin {
     }
 
     static void enhanceDomainWithBinding(ApplicationContext ctx, GrailsDomainClass dc, MetaClass mc) {
-        if (dc.abstract) {
-            return
-        }
-
-        def enhancer = new MetaClassEnhancer()
-        enhancer.addApi(new ControllersDomainBindingApi())
-        enhancer.enhance mc
+        //do nothing
     }
 
     def onChange = {event ->
