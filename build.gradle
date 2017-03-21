@@ -85,6 +85,7 @@ if (jointBuildGroovyJarProperty) {
 
 allprojects {
     repositories {
+        maven { url "http://maven.mit.edu/nexus/content/repositories/GRAILS" }
         maven { url "http://repo.grails.org/grails/core" }
         mavenLocal()
     }
